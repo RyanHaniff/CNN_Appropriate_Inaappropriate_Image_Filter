@@ -30,7 +30,7 @@ class RemoveCorruptImages:
             for image in os.listdir(os.path.join(self.data_dir, image_class)):
                 self.image_path = os.path.join(self.data_dir, image_class, image)
                 # print(image_path)
-                print(count)
+                # print(count)
                 if not self.verify_image():
                     print("removing image {}".format(self.image_path))
                     os.remove(self.image_path)
